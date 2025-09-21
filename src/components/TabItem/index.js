@@ -1,6 +1,6 @@
 import './index.css'
 
-const TabItem = props => {
+function TabItem(props) {
   const {tabDetails, updateActiveTabId, isActive} = props
   const {tabId, displayText} = tabDetails
   const onClickTabItem = () => {
