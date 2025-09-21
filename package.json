@@ -2,6 +2,7 @@
   "name": "projects-app",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://Basheer9997.github.io/my-projects-portfolio",
   "engines": {
     "node": "22.x"
   },
@@ -23,11 +24,14 @@
     "lint-staged": "10.5.4",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
